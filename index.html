@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA10-AA1-EV01: Cimientos de Infraestructura y Redes</title>
+  <!-- Carga de Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Configuración para usar la fuente Inter -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      /* Fondo muy suave para tranquilidad */
+      background-color: #f9fafb;
+    }
+    /* Estilos personalizados: Deep Slate para un look vanguardista */
+    .header-bg {
+      background-color: #1f2937; /* Deep Slate / Gris Pizarra Oscuro */
+    }
+    .card {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04); /* Sombra más sutil */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 12px; /* Mayor redondez */
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+    .icon-circle {
+      width: 3.5rem;
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .accent-text {
+      color: #06b6d4; /* Soft Cyan/Teal para acentos */
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+<!-- Header / Título Principal (Deep Slate Background) -->
+<header class="header-bg text-white pt-16 pb-20 rounded-b-3xl mb-10">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl sm:text-5xl font-extrabold mb-3 tracking-tight">
+      Cimientos Digitales: Redes y Alistamiento de Infraestructura
+    </h1>
+    <p class="text-xl sm:text-2xl font-light opacity-90">
+      Evidencia de Conocimiento: GA10-220501097-AA1-EV01
+    </p>
+    <div class="mt-8 flex justify-center">
+      <div class="icon-circle">
+        <!-- Icono SVG de Redes -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9h-3M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container mx-auto px-4">
+
+  <!-- Sección 1: Introducción y Contexto -->
+  <section class="mb-12 p-6 bg-white rounded-xl card">
+    <h2 class="text-3xl font-bold accent-text mb-4 border-b pb-2 border-gray-100">Contexto de la Implantación</h2>
+    <p class="text-lg leading-relaxed text-gray-700">
+      El alistamiento de infraestructura tecnológica es una fase crítica que determina el éxito de la implantación de cualquier solución. Esta revisión consolida los **conceptos básicos de redes y *networking***, indispensables para la configuración del hardware, la selección del sistema operativo y el establecimiento de los canales de comunicación.
+    </p>
+  </section>
+
+  <!-- Sección 2: Selección y Características del Sistema Operativo -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-bold accent-text mb-6 border-b pb-2 border-gray-100">1. El Corazón de la Plataforma: Características del SO</h2>
+
+    <!-- Plataforma Seleccionada con fondo suave -->
+    <div class="bg-gray-50 p-6 rounded-xl mb-6 border border-gray-200">
+      <p class="text-xl font-semibold text-gray-700">Plataforma Seleccionada: <span class="text-cyan-600 font-extrabold">Linux (Distribución Server, ej. Ubuntu/CentOS)</span></p>
+      <p class="text-sm mt-1 text-gray-500">Motivación: Estabilidad, seguridad, bajo costo de licencia y robusto soporte para servicios de red.</p>
+    </div>
+
+    <!-- Cards de Características con borde Soft Teal -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="bg-white p-6 rounded-xl card border-l-4 border-cyan-500">
+        <h3 class="font-bold text-xl mb-2 text-gray-900">Núcleo Modular y Estable</h3>
+        <p class="text-sm text-gray-600">Permite la carga o descarga dinámica de módulos de red sin requerir reinicios, optimizando el tiempo de actividad (*uptime*) y el mantenimiento del servicio.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl card border-l-4 border-cyan-500">
+        <h3 class="font-bold text-xl mb-2 text-gray-900">Seguridad Integrada</h3>
+        <p class="text-sm text-gray-600">Ofrece herramientas nativas robustas como IPTables/NFTables para firewalls, control de acceso basado en roles (RBAC) y auditoría de eventos de red.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl card border-l-4 border-cyan-500">
+        <h3 class="font-bold text-xl mb-2 text-gray-900">Alto Rendimiento I/O</h3>
+        <p class="text-sm text-gray-600">Optimizado para gestionar eficientemente operaciones de entrada/salida de datos (I/O) a través de la red, crucial para servidores con alto tráfico.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl card border-l-4 border-cyan-500">
+        <h3 class="font-bold text-xl mb-2 text-gray-900">Soporte Completo de TCP/IP</h3>
+        <p class="text-sm text-gray-600">Compatibilidad nativa y avanzada con IPv4 e IPv6, y facilidad de configuración de servicios de enrutamiento, DNS y DHCP.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 3: Organizaciones de Estándares de Redes -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-bold accent-text mb-6 border-b pb-2 border-gray-100">2. Estándares Globales: Pilares del Networking</h2>
+    <p class="text-lg mb-6 text-gray-700">La interoperabilidad y la comunicación global dependen de organizaciones que dictan las normas (estándares) que todos los fabricantes y desarrolladores deben seguir.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Card IEEE (Acento violeta suave) -->
+      <div class="bg-white p-6 rounded-xl card border-t-4 border-indigo-400">
+        <h3 class="font-extrabold text-xl text-indigo-700 mb-2">IEEE</h3>
+        <p class="text-sm font-semibold text-gray-600">Institute of Electrical and Electronics Engineers</p>
+        <p class="text-sm mt-2 text-gray-500">Crea estándares para la **capa física** y **enlace de datos**. Su contribución más importante es la familia **802** (802.3 Ethernet, 802.11 Wi-Fi).</p>
+      </div>
+
+      <!-- Card IETF (Acento violeta suave) -->
+      <div class="bg-white p-6 rounded-xl card border-t-4 border-indigo-400">
+        <h3 class="font-extrabold text-xl text-indigo-700 mb-2">IETF</h3>
+        <p class="text-sm font-semibold text-gray-600">Internet Engineering Task Force</p>
+        <p class="text-sm mt-2 text-gray-500">Responsable de los protocolos fundamentales de Internet, incluyendo el **TCP/IP**. Sus documentos clave son los **RFC** (Request for Comments).</p>
+      </div>
+
+      <!-- Card ISO (Acento violeta suave) -->
+      <div class="bg-white p-6 rounded-xl card border-t-4 border-indigo-400">
+        <h3 class="font-extrabold text-xl text-indigo-700 mb-2">ISO</h3>
+        <p class="text-sm font-semibold text-gray-600">International Organization for Standardization</p>
+        <p class="text-sm mt-2 text-gray-500">Creó el modelo de referencia **OSI** (Open Systems Interconnection), el marco teórico universal para entender cómo funcionan las redes.</p>
+      </div>
+
+      <!-- Card ITU-T (Acento violeta suave) -->
+      <div class="bg-white p-6 rounded-xl card border-t-4 border-indigo-400">
+        <h3 class="font-extrabold text-xl text-indigo-700 mb-2">ITU-T</h3>
+        <p class="text-sm font-semibold text-gray-600">International Telecommunication Union</p>
+        <p class="text-sm mt-2 text-gray-500">Establece estándares para telecomunicaciones globales, incluyendo la codificación de datos, voz y video, vital para la infraestructura de carriers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 4: Familias de Protocolos (Conexión vs. Sin Conexión) -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-bold accent-text mb-6 border-b pb-2 border-gray-100">3. El Lenguaje de la Red: Familias de Protocolos</h2>
+    <p class="text-lg mb-6 text-gray-700">La transmisión de datos se rige por dos filosofías de protocolo en la capa de transporte, cada una optimizada para diferentes necesidades de la aplicación.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Protocolo Orientado a Conexión (TCP) - Teal suave -->
+      <div class="bg-cyan-50 p-6 rounded-xl card border-l-4 border-cyan-500">
+        <h3 class="font-extrabold text-2xl text-cyan-700 mb-3">Orientado a Conexión (TCP)</h3>
+        <p class="text-sm text-gray-600 mb-2">Requiere un **acuerdo previo** (*Three-way Handshake*). Es el protocolo de **confiabilidad**.</p>
+        <ul class="list-disc list-inside space-y-1 text-sm pl-4 text-gray-600">
+          <li>**Garantía:** Asegura la llegada y el orden correcto de los paquetes.</li>
+          <li>**Mecanismo:** Usa acuses de recibo (*ACK*) y retransmisión.</li>
+          <li>**Uso Típico:** Navegación Web (HTTP), Correo (SMTP), Transferencia de Archivos (FTP).</li>
+        </ul>
+      </div>
+
+      <!-- Protocolo No Orientado a Conexión (UDP) - Soft Indigo -->
+      <div class="bg-indigo-50 p-6 rounded-xl card border-l-4 border-indigo-500">
+        <h3 class="font-extrabold text-2xl text-indigo-700 mb-3">No Orientado a Conexión (UDP)</h3>
+        <p class="text-sm text-gray-600 mb-2">Envía datos de forma directa sin acuerdo ni confirmación previa. Es el protocolo de la **velocidad**.</p>
+        <ul class="list-disc list-inside space-y-1 text-sm pl-4 text-gray-600">
+          <li>**Garantía:** No asegura la llegada ni el orden (se pierden paquetes).</li>
+          <li>**Mecanismo:** Envío simple (*Fire-and-Forget*).</li>
+          <li>**Uso Típico:** Streaming en Vivo, Videoconferencia, Juegos en Línea (donde la latencia es crítica).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 5: Medios de Transmisión -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-bold accent-text mb-6 border-b pb-2 border-gray-100">4. Medios de Transmisión: El Canal Físico</h2>
+    <p class="text-lg mb-6 text-gray-700">El medio define cómo y dónde viaja la señal de datos. La selección impacta directamente la velocidad, la distancia y la inmunidad a interferencias.</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Medios Guiados - Soft Green -->
+      <div class="bg-emerald-50 p-6 rounded-xl card border-l-4 border-emerald-500">
+        <h3 class="font-extrabold text-2xl text-emerald-700 mb-3">Medios Guiados (Wired)</h3>
+        <p class="text-sm text-gray-600 mb-4">La señal está confinada y dirigida a través de un **medio físico** sólido (cables).</p>
+        <ul class="list-disc list-inside space-y-2 text-sm pl-4 text-gray-600">
+          <li>**Cable de Par Trenzado (UTP/STP):** Económico y más común en LANs.</li>
+          <li>**Cable Coaxial:** Mayor blindaje, usado históricamente en redes y TV por cable.</li>
+          <li>**Fibra Óptica:** Velocidad extrema e inmunidad total a interferencias (luz). Ideal para largas distancias y backbones.</li>
+        </ul>
+      </div>
+
+      <!-- Medios No Guiados - Soft Rust/Orange -->
+      <div class="bg-amber-50 p-6 rounded-xl card border-l-4 border-amber-500">
+        <h3 class="font-extrabold text-2xl text-amber-700 mb-3">Medios No Guiados (Wireless)</h3>
+        <p class="text-sm text-gray-600 mb-4">La transmisión se realiza a través de ondas electromagnéticas (el aire).</p>
+        <ul class="list-disc list-inside space-y-2 text-sm pl-4 text-gray-600">
+          <li>**Ondas de Radio:** Ampliamente utilizadas para Wi-Fi (802.11) y comunicación móvil.</li>
+          <li>**Microondas:** Requiere línea de vista, usado para enlaces punto a punto y satelitales.</li>
+          <li>**Infrarrojos:** Comunicación de corto alcance en línea de vista (ej. controles remotos), muy seguro.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer (Deep Slate Background) -->
+<footer class="header-bg mt-12 py-8 rounded-t-xl text-white text-center">
+  <p class="text-lg font-light">
+    GA10-220501097-AA1-EV01 | Desarrollo de Software e Infraestructura.
+  </p>
+  <p class="text-sm opacity-80 mt-1">
+    Informe consolidado para la fase de alistamiento.
+  </p>
+</footer>
+
+</body>
+</html>
